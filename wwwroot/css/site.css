@@ -57,3 +57,56 @@ body {
     cursor: pointer;
     border-radius: 20px 20px 20px 20px; /* [TL] [TR] [BR] [BL] */
 }
+
+.btn-faleNoWhatsapp {
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px; /* [TL] [TR] [BR] [BL] */
+}
+
+.btn-verProdutos {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px; /* [TL] [TR] [BR] [BL] */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+.hero-images img {
+    width: 50%;
+}
+
+.hero-conteudo {
+    width: 50%;
+}
+
+.galeria-horizontal {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.galeria-horizontal img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
