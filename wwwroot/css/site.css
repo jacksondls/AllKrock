@@ -29,9 +29,9 @@ header nav ul {
 }
 
 header nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     }
 
 
@@ -110,3 +110,41 @@ body {
     padding: 15px;
     text-align: center;
 }
+
+.diferenciais {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.rodape {
+    display: flex;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+.rodape1 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-preto);
+}
+
+.link-rodape {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}   
