@@ -46,7 +46,6 @@ section {
 body {
     background-color: var(--cor-principal);
     color: var(--cor-branco);
-    padding: 20px;
     text-align: center;
     border-bottom: 2px solid var(--cor-preto);
     font-family: "Baloo 2", sans-serif;
@@ -117,7 +116,7 @@ body {
 
 .diferenciais {
     display: flex;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
     margin-top: 20px;
 }
@@ -139,9 +138,17 @@ body {
 }
 
 .rodape1 {
-    display: flex;
-    justify-content: center;
+    padding: 10px;
     background-color: var(--cor-preto);
+}
+
+.rodape1 p {
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
 }
 
 .link-rodape {
@@ -172,7 +179,9 @@ body {
 }
 
 .diferencial-item svg {
-    color: var(--cor-preto)
+    color: var(--cor-preto);
+    width: 30px;
+    height: 30px;
 }
 .footer-item {
     display: flex;
