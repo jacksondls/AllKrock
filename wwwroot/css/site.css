@@ -33,8 +33,18 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
+}
 
+.header-acoes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-icon {
+    display: flex;
+    gap: 10px;
+}
 
 section {
     padding: 5px 5px;
