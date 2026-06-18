@@ -37,7 +37,7 @@ header nav {
 
 
 section {
-    padding: 40px 20px;
+    padding: 5px 5px;
     background-color: var(--cor-principal);
     color: var(--cor-branco);
     border-bottom: 2px solid var(--cor-preto);
@@ -166,8 +166,13 @@ body {
     gap: 10px;
 }
 
+.diferencial-texto h3,
+.diferencial-texto p {
+    margin: 0;
+}
+
 .diferencial-item svg {
-    color: var(--cor-preto);
+    color: var(--cor-preto)
 }
 .footer-item {
     display: flex;
