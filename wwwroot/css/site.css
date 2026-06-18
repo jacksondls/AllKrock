@@ -145,6 +145,21 @@ body {
 .fale-conosco {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
-}   
+}
+
+.diferencial-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.diferencial-item svg {
+    color: var(--cor-preto);
+}
+.footer-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
