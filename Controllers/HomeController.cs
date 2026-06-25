@@ -15,8 +15,21 @@ namespace AllKrock.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
+            List<Produto> produtos = new List<Produto>
+            {
+                new Produto { Id = 1, Nome = "Chiclete", Imagem = "/images/Chiclete.png" },
+
+                new Produto { Id = 2, Nome = "Defumada", Imagem = "/images/Defumada.png"},
+
+                new Produto { Id = 3, Nome = "Pedacinho do Céu", Imagem = "/images/pedacinhoDoCeu.png"},
+
+                new Produto { Id = 4, Nome = "Uva", Imagem = "/images/Uva.png"},
+
+                new Produto { Id = 5, Nome = "Ninho", Imagem = "/images/Ninho.png"}
+
+            };
+            return View(produtos);
+        }   
 
         public IActionResult Privacy()
         {

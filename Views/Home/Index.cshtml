@@ -1,4 +1,6 @@
-﻿<!--seção de apresentação da empresa-->
+﻿@model List<Produto>
+
+<!--seção de apresentação da empresa-->
 <section class="hero">
    <div class=" hero-conteudo">
     <p>PIPOCA ARTESANAL</p>
@@ -16,54 +18,18 @@
 
 <!-- seção de cards dos produtos  -->
 <section>
-    <h2>"NOSSOS SABORES"</h2>
-
+    <h2>    NOSSOS SABORES</h2>
     <div class="galeria-horizontal">
-
-   
+    @foreach (var produto in Model)
+    {
         <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="chiclete">CHICLETE</h5>
+            <img src="@produto.Imagem" class="card-img-top" alt="@produto.Nome">
+            <div class="card-body">
+                <h5>@produto.Nome</h5>
+            </div>
         </div>
-        </div>
-    
-        <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="blueIce">BLUE ICE</h5>
-        </div>
-        </div>
-   
-        <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="cookies">COOKIES</h5>
-        </div>
-        </div>
-    
-        <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="caramelo">CARAMELO</h5>
-        </div>
-        </div>
-    
-        <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="leiteNinho">LEITE NINHO</h5>
-        </div>
-        </div>
-    
-        <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="tuttiFrutti">TUTTI-FRUTTI</h5>
-        </div>
-        </div>
+    }
     </div>
-    
    </section>
 
 <!-- seção de diferenciais da empresa -->
