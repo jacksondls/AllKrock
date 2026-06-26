@@ -13,6 +13,11 @@ header {
     border-bottom: 2px solid var(--cor-preto);
 }
 
+header img {
+    width: 150px;
+    height: auto;
+}
+
 header nav a {
     color: var(--cor-branco);
     margin: 0 15px;
@@ -96,7 +101,8 @@ body {
     align-items: center;
 }
 .hero-images img {
-    width: 50%;
+    width: 250px;
+    height: 350px;
 }
 
 .hero-conteudo {
