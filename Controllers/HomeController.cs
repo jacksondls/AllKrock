@@ -51,6 +51,12 @@ namespace AllKrock.Controllers
             return View();
         }
 
+        public IActionResult Eventos()
+        {
+            return View();
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
