@@ -58,9 +58,6 @@ section {
     color: var(--cor-preto);
     border-bottom: 2px solid var(--cor-preto);
 }
-.produtos{
-    background-color: var(--cor-branco)
-}
 
 body {
     background-color: var(--cor-principal);
@@ -118,14 +115,22 @@ body {
     gap: 15px;
 }
 
-.galeria-horizontal {
+.swiper produtos-swiper {
+    background-color: var(--cor-branco);
+}
+
+.swiper {
+    overflow-x: hidden;   
+}
+
+.swiper-wrapper {
     display: flex;
     gap: 15px;
     overflow-x: auto;
     padding: 10px 0;
 }
 
-.galeria-horizontal img {
+.swiper-slide img {
     max-width: 200px;
     height: auto;
     border-radius: 8px;
@@ -139,9 +144,20 @@ body {
     text-align: center;
 }
 
-.card h5 {
+.card-body h5 {
     font-family: "Baloo 2", sans-serif;
     color: var(--cor-preto);
+}
+
+.card-body button {
+    font-family: "Baloo 2", sans-serif;
+    background-color: var(--cor-branco);
+    color: var(--cor-principal);
+    border: solid;
+    padding: 5px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px; /* [TL] [TR] [BR] [BL] */
 }
 
 .card img {

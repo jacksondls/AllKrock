@@ -10,20 +10,29 @@
 </section>
 
 <!-- seção de cards dos produtos  -->
-<section class="produtos">
-    <h2>    NOSSOS SABORES</h2>
-    <div class="galeria-horizontal">
-    @foreach (var produto in Model)
-    {
-        <div class="card">
-            <img src="@produto.Imagem" class="card-img-top" alt="@produto.Nome">
-            <div class="card-body">
-                <h5>@produto.Nome</h5>
-            </div>
+<section>
+    <h2>NOSSOS SABORES</h2>
+
+    <div class="swiper produtos-swiper">
+        <div class="swiper-wrapper">
+            @foreach (var produto in Model)
+            {
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="@produto.Imagem" alt="@produto.Nome">
+                        <div class="card-body">
+                            <h5>@produto.Nome</h5>
+                            <button type="button" class="btn btn-saibaMais">SAIBA MAIS</button>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
-    }
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
     </div>
-   </section>
+</section>
 
 <!-- seção de diferenciais da empresa -->
    <section>
@@ -87,5 +96,20 @@
        </div>
    </section>
 
-
+@section Scripts {
+    <script>
+        const swiper = new Swiper('.produtos-swiper', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {   
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+}
 
