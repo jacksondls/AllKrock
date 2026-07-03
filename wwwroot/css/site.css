@@ -11,7 +11,6 @@ header {
     color: var(--cor-branco);
     padding: 20px;
     text-align: left;
-    border-bottom: 2px solid var(--cor-preto);
 }
 
 header img {
@@ -54,9 +53,8 @@ header nav {
 
 section {
     padding: 5px 5px;
-    background-color: var(--cor-principal);
+    background-color: var(--cor-branco);
     color: var(--cor-preto);
-    border-bottom: 2px solid var(--cor-preto);
 }
 
 body {
@@ -126,7 +124,6 @@ body {
 .swiper-wrapper {
     display: flex;
     gap: 15px;
-    overflow-x: auto;
     padding: 10px 0;
 }
 
@@ -168,10 +165,28 @@ body {
 
 .diferenciais {
     display: flex;
-    gap: 60px;
+    gap: 100px;
     justify-content: center;
     margin-top: 20px;
     background-color: var(--cor-branco)
+}
+
+.diferencial-item {
+    display: grid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.diferencial-texto h3,
+.diferencial-texto p {
+    margin: 0;
+}
+
+.diferencial-item img {
+    width: 70px;
+    margin-bottom: 10px;
 }
 
 .banner {
@@ -241,22 +256,6 @@ html {
     align-items: center;
 }
 
-.diferencial-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.diferencial-texto h3,
-.diferencial-texto p {
-    margin: 0;
-}
-
-.diferencial-item svg {
-    color: var(--cor-preto);
-    width: 30px;
-    height: 30px;
-}
 .footer-item {
     display: flex;
     gap: 5px;
