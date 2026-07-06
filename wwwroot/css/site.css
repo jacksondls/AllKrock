@@ -127,12 +127,6 @@ body {
     padding: 10px 0;
 }
 
-.swiper-slide img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
 .card {
     background-color: var(--cor-branco);
     border: 1px solid var(--cor-rosa-claro);
@@ -160,7 +154,7 @@ body {
 .card img {
     width: 100px;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .diferenciais {
@@ -186,7 +180,7 @@ body {
 
 .diferencial-item img {
     width: 70px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;    
 }
 
 .banner {
