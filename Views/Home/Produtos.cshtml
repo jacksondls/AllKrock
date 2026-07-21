@@ -1,2 +1,73 @@
-﻿<h1>Produtos</h1>
-<p>Página em construção</p>
+﻿<!-- HERO -->
+<section class="hero">
+    <img src="/images/banner-produtos.png" alt="Nossos Produtos AllKrock" />
+</section>
+
+<!-- NOSSOS SABORES -->
+<section class="secao-produtos">
+    <h2 class="secao-titulo">🍿 NOSSOS SABORES 🍿</h2>
+    <p class="secao-subtitulo">Pipoca artesanal que transforma qualquer momento em algo especial.</p>
+
+    <div class="swiper produtos-swiper-page">
+        <div class="swiper-wrapper">
+            @foreach (var produto in Model)
+            {
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="@produto.Imagem" alt="@produto.Nome">
+                        <div class="card-body">
+                            <h5>@produto.Nome</h5>
+                            <button class="btn btn-saiba-mais">SAIBA MAIS</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- EMBALAGENS -->
+<section class="embalagens">
+    <div class="embalagens-conteudo">
+        <div class="embalagens-titulo">
+            <h2><span class="destaque">EMBALAGENS</span> PARA TODOS OS MOMENTOS 🍿</h2>
+        </div>
+        <div class="embalagens-grid">
+            <div class="embalagem-item">
+                <img src="/images/pote90.png" alt="Pote 90g" />
+                <h4>Pote 90g</h4>
+                <p>Perfeito para matar a vontade</p>
+            </div>
+            <div class="embalagem-item">
+                <img src="/images/pote180.png" alt="Pote 180g" />
+                <h4>Pote 180g</h4>
+                <p>Mais sabor para compartilhar</p>
+            </div>
+            <div class="embalagem-item">
+                <img src="/images/pote400.png" alt="Pote 400g" />
+                <h4>Pote 400g</h4>
+                <p>Ideal para dividir com a galera</p>
+            </div>
+            <div class="embalagem-item">
+                <img src="/images/balde1l.png" alt="Balde 1L" />
+                <h4>Balde 1L</h4>
+                <p>Para momentos especiais</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BANNER CTA -->
+<section class="banner">
+    <div class="banner-cta-texto">
+        <h1>Ainda não decidiu?</h1>
+        <p>Experimente nossos sabores e descubra o seu favorito! 🍿</p>
+    </div>
+    <img src="/images/mascote-bandeira.png" alt="Mascote AllKrock" />
+    <div class="banner-direita">
+        <button class="btn btn-fazerMeuPedido">FAZER MEU PEDIDO →</button>
+    </div>
+</section>

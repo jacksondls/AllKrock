@@ -1,2 +1,81 @@
-﻿<h1>Eventos</h1>
-<p>Página em construção</p>
+﻿<!-- HERO -->
+<section class="hero">
+    <img src="/images/banner-eventos.png" alt="Eventos AllKrock" />
+</section>
+
+<!-- EVENTOS REALIZADOS -->
+<section class="eventos-realizados">
+    <div class="eventos-icone">📅</div>
+    <h2 class="secao-titulo">🍿 EVENTOS REALIZADOS 🍿</h2>
+    <p class="secao-subtitulo">Confira alguns momentos especiais em que a AllKrock esteve presente!</p>
+
+    <div class="swiper eventos-swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="evento-card">
+                    <img src="/images/evento1.png" alt="Festival de Verão" />
+                    <div class="evento-info">
+                        <p class="evento-data">📅 Janeiro 2025</p>
+                        <h3 class="evento-nome">Festival de Verão</h3>
+                        <p class="evento-local">📍 Natal/RN</p>
+                        <p class="evento-descricao">Muita música, energia e, claro, muita pipoca AllKrock!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="evento-card">
+                    <img src="/images/evento2.png" alt="Festa das Crianças" />
+                    <div class="evento-info">
+                        <p class="evento-data">📅 Outubro 2024</p>
+                        <h3 class="evento-nome">Festa das Crianças</h3>
+                        <p class="evento-local">📍 Natal/RN</p>
+                        <p class="evento-descricao">Diversão e sabor para a criançada!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="evento-card">
+                    <img src="/images/evento3.png" alt="Natal Encantado" />
+                    <div class="evento-info">
+                        <p class="evento-data">📅 Dezembro 2024</p>
+                        <h3 class="evento-nome">Natal Encantado</h3>
+                        <p class="evento-local">📍 Natal/RN</p>
+                        <p class="evento-descricao">O clima natalino ficou ainda mais doce com a AllKrock!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<!-- BANNER CTA EVENTOS -->
+<section class="eventos-banner-cta">
+    <div class="eventos-banner-icone">
+        <div class="rede-social">🍿</div>
+    </div>
+    <div class="eventos-banner-texto">
+        <h3>LEVE A ALLKROCK PARA O SEU EVENTO!</h3>
+        <p>Fazemos parte de momentos que ficam na memória.</p>
+        <p>Solicite um orçamento e torne seu evento ainda mais especial!</p>
+    </div>
+    <a asp-controller="Home" asp-action="Contato" class="btn-fale-conosco-evento">FALE CONOSCO →</a>
+</section>
+
+@section Scripts {
+    <script>
+        const swiperEventos = new Swiper('.eventos-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+}
